@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Добавление рамки к изображению</title>
+</head>
+<body>
+    <h1>Добавление рамки к изображению</h1>
+    <form method="POST" enctype="multipart/form-data">
+        {{ form.hidden_tag() }}
+        <label for="file">Выберите изображение:</label>
+        {{ form.file }}<br><br>
+        <label for="border_size">Размер рамки (пикселей):</label>
+        {{ form.border_size }}<br><br>
+        {{ form.recaptcha }}<br><br>
+        {{ form.submit }}
+    </form>
+</body>
+</html>

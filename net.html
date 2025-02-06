@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Результат обработки</title>
+</head>
+<body>
+    <h1>Результат обработки</h1>
+    <h2>Исходное изображение:</h2>
+    <img src="{{ original_image }}" alt="Original Image"><br><br>
+
+    <h2>График распределения цветов исходного изображения:</h2>
+    <img src="data:image/png;base64,{{ original_plot }}" alt="Color Distribution"><br><br>
+
+    <h2>Обработанное изображение:</h2>
+    <img src="{{ bordered_image }}" alt="Bordered Image"><br><br>
+</body>
+</html>

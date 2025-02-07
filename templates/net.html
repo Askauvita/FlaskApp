@@ -1,0 +1,20 @@
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Результат обработки{% endblock %}
+
+{% block content %}
+<h1>Результат обработки</h1>
+
+<h2>Исходное изображение:</h2>
+<img src="{{ original_image }}" alt="Original Image" width="400">
+
+<h2>График распределения цветов исходного изображения:</h2>
+<img src="data:image/png;base64,{{ original_plot }}" alt="Color Distribution Original" width="600">
+
+<h2>Обработанное изображение:</h2>
+<img src="{{ bordered_image }}" alt="Bordered Image" width="400">
+
+<h2>График распределения цветов обработанного изображения:</h2>
+<img src="data:image/png;base64,{{ bordered_plot }}" alt="Color Distribution Bordered" width="600">
+{% endblock %}
